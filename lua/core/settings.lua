@@ -34,9 +34,9 @@ require('material.functions').toggle_eob()
 -- Autopairs
 require('nvim-autopairs').setup{}
 
-vim.cmd([[
+--[[vim.cmd([[
 augroup remember_folds
   autocmd!
   autocmd BufWinLeave * mkview
   autocmd BufWinEnter * silent! loadview
-augroup END]])
+augroup END]]--)
