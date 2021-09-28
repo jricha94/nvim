@@ -57,6 +57,7 @@ return require('packer').startup(function()
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
+
   -- Splash page
   use {
     'goolord/alpha-nvim',
