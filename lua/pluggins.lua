@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons',
     config = function() require'nvim-tree'.setup {} end
 }
+    use 'marko-cerovac/material.nvim'
 
 
   -- Automatically set up your configuration after cloning packer.nvim
