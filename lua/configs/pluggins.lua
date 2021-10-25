@@ -13,6 +13,9 @@ return require('packer').startup(function(use)
     config = function() require'nvim-tree'.setup {} end
 }
     use 'marko-cerovac/material.nvim'
+    use 'nvim-lualine/lualine.nvim'
+    use 'akinsho/bufferline.nvim'
+    use 'windwp/nvim-autopairs'
 
 
   -- Automatically set up your configuration after cloning packer.nvim

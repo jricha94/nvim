@@ -1,5 +1,0 @@
--- ToggleTree config
-
-local M = {}
-
-

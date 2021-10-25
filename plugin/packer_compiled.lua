@@ -69,6 +69,14 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
   ["material.nvim"] = {
     loaded = true,
     path = "/home/jarod/.local/share/nvim/site/pack/packer/start/material.nvim"
