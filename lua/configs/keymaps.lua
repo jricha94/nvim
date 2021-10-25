@@ -5,12 +5,12 @@ local M = {}
 local opts = {noremap = true, silent = true}
 
 local mode_adapters = {
-  insert = "i",
-  normal = "n",
-  term = "t",
-  visual = "v",
+  insert       = "i",
+  normal       = "n",
+  term         = "t",
+  visual       = "v",
   visual_block = "x",
-  command = "c",
+  command      = "c",
 }
 
 
@@ -19,7 +19,7 @@ local keys = {
     ["jk"] = "<Esc>",
   },
   normal = {
-    ["<Space>"] = "<NOP>",
+    ["<Space>"]   = "<NOP>",
     ["<Leader>e"] = "<cmd>NvimTreeToggle<CR>",
   }
 }
