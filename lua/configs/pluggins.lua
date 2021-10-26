@@ -7,15 +7,30 @@ end
 return require('packer').startup(function(use)
   -- My plugins here
     use 'wbthomason/packer.nvim'
-    use {
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons',
-    config = function() require'nvim-tree'.setup {} end
-}
+    use 'kyazdani42/nvim-tree.lua'
+    use 'kyazdani42/nvim-web-devicons'
     use 'marko-cerovac/material.nvim'
     use 'nvim-lualine/lualine.nvim'
     use 'akinsho/bufferline.nvim'
     use 'windwp/nvim-autopairs'
+  -- LSP stuff
+    use 'neovim/nvim-lspconfig'             -- nvim lsp config
+    use 'tamago324/nlsp-settings.nvim'      -- json configuration for lsp
+    use 'jose-elias-alvarez/null-ls.nvim'   -- helps setup lsp clients
+    use 'williamboman/nvim-lsp-installer'   -- help install lsp clients
+    use 'onsails/lspkind-nvim'
+  -- Auto Complete Stuff
+    use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "L3MON4D3/LuaSnip",
+      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lua",
+    }
+  }
 
 
   -- Automatically set up your configuration after cloning packer.nvim

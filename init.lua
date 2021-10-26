@@ -1,1 +1,10 @@
-require('configs')
+require('configs.pluggins')
+require('configs.colors').setup()
+require('configs.buffer').setup()
+require('configs.keymaps').setup()
+require('configs.nvimtree').setup()
+require('configs.settings').setup()
+require('configs.statusline').setup()
+require('configs.autopairs').setup()
+require('lsp.completion')
+
