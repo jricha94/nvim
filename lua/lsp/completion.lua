@@ -7,7 +7,6 @@ lspkind.init({
     with_text = true,
     preset = 'default',
 })
-
 local cmp = require'cmp'
 
 cmp.setup{
@@ -47,6 +46,9 @@ cmp.setup{
     { name = 'buffer' },
   },
 
+  documentation = {
+      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  },
   formatting = {
     format = lspkind.cmp_format {
       with_text = true,
@@ -64,3 +66,4 @@ cmp.setup{
     ghost_text = true,
   }
 }
+

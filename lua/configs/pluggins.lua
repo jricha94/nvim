@@ -32,7 +32,8 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'nvim-treesitter/nvim-treesitter'
+  use "nvim-treesitter/nvim-treesitter"
+  use "rafamadriz/friendly-snippets"
 
 
   -- Automatically set up your configuration after cloning packer.nvim
