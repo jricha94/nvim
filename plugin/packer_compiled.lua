@@ -69,9 +69,37 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/LuaSnip"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/jarod/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -81,13 +109,37 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jarod/.local/share/nvim/site/pack/packer/start/material.nvim"
   },
+  ["nlsp-settings.nvim"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/jarod/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

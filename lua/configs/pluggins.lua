@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'nvim-treesitter/nvim-treesitter'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
