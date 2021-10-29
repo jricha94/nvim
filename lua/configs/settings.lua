@@ -16,7 +16,6 @@
      pumheight = 10,            -- Pop-up menu height
      showmode = false,          -- Don't need to show mode when we have a pretty statusbar
      showtabline = 2,           -- Always show tabs
-     smartcase = true,          -- Makes case smart
      splitbelow = true,         -- New splits are opened below
      splitright = true,         -- New V-splits are to the right
      swapfile = false,          -- Create a swapfile

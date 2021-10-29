@@ -6,19 +6,19 @@ end
 
 return require('packer').startup(function(use)
   -- My plugins here
-    use 'wbthomason/packer.nvim'
-    use 'kyazdani42/nvim-tree.lua'
-    use 'kyazdani42/nvim-web-devicons'
-    use 'marko-cerovac/material.nvim'
-    use 'nvim-lualine/lualine.nvim'
-    use 'akinsho/bufferline.nvim'
-    use 'windwp/nvim-autopairs'
+    use "wbthomason/packer.nvim"
+    use "kyazdani42/nvim-tree.lua"
+    use "kyazdani42/nvim-web-devicons"
+    use "marko-cerovac/material.nvim"
+    use "nvim-lualine/lualine.nvim"
+    use "akinsho/bufferline.nvim"
+    use "windwp/nvim-autopairs"
   -- LSP stuff
-    use 'neovim/nvim-lspconfig'             -- nvim lsp config
-    use 'tamago324/nlsp-settings.nvim'      -- json configuration for lsp
-    use 'jose-elias-alvarez/null-ls.nvim'   -- helps setup lsp clients
-    use 'williamboman/nvim-lsp-installer'   -- help install lsp clients
-    use 'onsails/lspkind-nvim'
+    use "neovim/nvim-lspconfig"             -- nvim lsp config
+    use "tamago324/nlsp-settings.nvim"      -- json configuration for lsp
+    use "jose-elias-alvarez/null-ls.nvim"   -- helps setup lsp clients
+    use "williamboman/nvim-lsp-installer"   -- help install lsp clients
+    use "onsails/lspkind-nvim"
   -- Auto Complete Stuff
     use {
     "hrsh7th/nvim-cmp",
@@ -34,6 +34,9 @@ return require('packer').startup(function(use)
 
   use "nvim-treesitter/nvim-treesitter"
   use "rafamadriz/friendly-snippets"
+  use "akinsho/toggleterm.nvim"
+
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim
