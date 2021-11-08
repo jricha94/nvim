@@ -21,6 +21,7 @@ local keys = {
   normal = {
     ["<Space>"]   = "<NOP>",
     ["<Leader>e"] = "<cmd>NvimTreeToggle<CR>",
+    ["<Leader>s"] = "<cmd>SymbolsOutline<CR>",
   }
 }
 
@@ -29,8 +30,8 @@ function M.add_key(mode, k, v)
 end
 
 function M.set_keys()
-  for mode, map in pairs(keys) do 
-    for k, v in pairs(map) do 
+  for mode, map in pairs(keys) do
+    for k, v in pairs(map) do
       vim.api.nvim_set_keymap(mode_adapters[mode], k, v, opts)
     end
   end

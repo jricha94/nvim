@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
     use "jose-elias-alvarez/null-ls.nvim"   -- helps setup lsp clients
     use "williamboman/nvim-lsp-installer"   -- help install lsp clients
     use "onsails/lspkind-nvim"
+    use "nvim-lua/plenary.nvim"
+    use "simrat39/symbols-outline.nvim"
   -- Auto Complete Stuff
     use {
     "hrsh7th/nvim-cmp",
