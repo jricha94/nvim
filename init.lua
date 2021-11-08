@@ -10,3 +10,4 @@ require('lsp.lsp')
 require('configs.autopairs')
 require('configs.treesitter')
 require('configs.toggleterm')
+

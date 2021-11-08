@@ -1,8 +1,21 @@
 vim.opt.completeopt = {"menu", "menuone", "noselect"}
 vim.opt.shortmess:append "c"
 
+require("luasnip/loaders/from_vscode").load()
+
+
 local luasnip = require 'luasnip'
 local lspkind = require('lspkind')
+
+local tabnine = require('cmp_tabnine.config')
+tabnine:setup({
+        max_lines = 1000;
+        max_num_results = 20;
+        sort = true;
+	run_on_every_keystroke = true;
+	snippet_placeholder = '..';
+})
+
 
 lspkind.init({
     with_text = true,
@@ -49,6 +62,7 @@ cmp.setup{
     { name = 'luasnip' },
     { name = 'path'},
     { name = 'buffer' },
+    { name = "cmp_tabnine" },
   },
 
   documentation = {
@@ -62,6 +76,7 @@ cmp.setup{
         nvim_lap = "[LSP]",
         path = "[path]",
         luasnip = "[snip]",
+        cmp_tabnine = "[tabnine]",
       },
     },
   },

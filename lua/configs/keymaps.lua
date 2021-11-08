@@ -21,7 +21,6 @@ local keys = {
   normal = {
     ["<Space>"]   = "<NOP>",
     ["<Leader>e"] = "<cmd>NvimTreeToggle<CR>",
-    ["<Leader>s"] = "<cmd>SymbolsOutline<CR>",
   }
 }
 

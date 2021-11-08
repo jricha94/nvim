@@ -25,6 +25,7 @@ local settings = {
   expandtab = true,          -- Convert tabs to spaces
   number = true,             -- Set numbered lines
   relativenumber = true,     -- Set relative number
+  numberwidth = 6,           -- Width for number column
   cursorline = false,        -- Highlight line with cursor on it
   wrap = false,              -- Wrap lines that extend off screen
   foldlevel = 999,           -- Fold level when opening file

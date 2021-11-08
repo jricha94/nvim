@@ -20,7 +20,9 @@ return require('packer').startup(function(use)
     use "williamboman/nvim-lsp-installer"   -- help install lsp clients
     use "onsails/lspkind-nvim"
     use "nvim-lua/plenary.nvim"
-    use "simrat39/symbols-outline.nvim"
+    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+
+
   -- Auto Complete Stuff
     use {
     "hrsh7th/nvim-cmp",
