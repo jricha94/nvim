@@ -1,6 +1,6 @@
 require('configs.pluggins')
 require('configs.colors').setup()
-require('configs.buffer').setup()
+require('configs.buffer')
 require('configs.keymaps').setup()
 require('configs.nvimtree').setup()
 require('configs.settings')

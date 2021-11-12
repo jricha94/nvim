@@ -17,10 +17,19 @@ local mode_adapters = {
 local keys = {
   insert = {
     ["jk"] = "<Esc>",
+    ["kj"] = "<Esc>",
+    ["jj"] = "<Esc>",
+
   },
   normal = {
     ["<Space>"]   = "<NOP>",
     ["<Leader>e"] = "<cmd>NvimTreeToggle<CR>",
+    ["<S-h>"] = "<C-w>h",
+    ["<S-j>"] = "<C-w>j",
+    ["<S-k>"] = "<C-w>k",
+    ["<S-l>"] = "<C-w>l",
+    ["<C-l>"] = "<cmd>BufferLineCycleNext<CR>",
+    ["<C-h>"] = "<cmd>BufferLineCyclePrev<CR>",
   }
 }
 
