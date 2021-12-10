@@ -1,13 +1,15 @@
-require('configs.pluggins')
-require('configs.colors').setup()
-require('configs.buffer')
 require('configs.keymaps').setup()
-require('configs.nvimtree').setup()
+require('configs.pluggins')
+require('configs.colors')
+require('configs.buffer')
+require('configs.nvimtree')
 require('configs.settings')
-require('configs.statusline').setup()
-require('lsp.completion')
-require('lsp.lsp')
+require('configs.statusline')
 require('configs.autopairs')
 require('configs.treesitter')
 require('configs.toggleterm')
+-- Lsp specific files
+require('lsp.completion')
+require('lsp.lsp')
+
 

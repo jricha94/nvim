@@ -16,7 +16,6 @@ tabnine:setup({
 	snippet_placeholder = '..';
 })
 
-
 lspkind.init({
     with_text = true,
     preset = 'default',
@@ -76,7 +75,7 @@ cmp.setup{
         nvim_lap = "[LSP]",
         path = "[path]",
         luasnip = "[snip]",
-        cmp_tabnine = "[tabnine]",
+        cmp_tabnine = "[tab9]",
       },
     },
   },
