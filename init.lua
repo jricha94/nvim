@@ -1,15 +1,24 @@
-require('configs.keymaps').setup()
-require('configs.pluggins')
-require('configs.colors')
-require('configs.buffer')
-require('configs.nvimtree')
-require('configs.settings')
-require('configs.statusline')
-require('configs.autopairs')
-require('configs.treesitter')
-require('configs.toggleterm')
--- Lsp specific files
-require('lsp.completion')
-require('lsp.lsp')
+-- Jarod's super cool neovim config
+-- git repo LunarVim/Neovim-from-scratch was used at the guide to make this
 
-
+require "user.keymaps"
+require "user.plugins"
+require "user.options"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.autopairs"
+require "user.comment"
+require "user.gitsigns"
+require "user.nvim-tree"
+require "user.bufferline"
+require "user.lualine"
+require "user.toggleterm"
+require "user.project"
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.whichkey"
+require "user.autocommands"
