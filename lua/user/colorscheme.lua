@@ -1,6 +1,6 @@
 -- Color scheme
 
-local scheme = "material"
+local scheme = "system76"
 
 if scheme == "system76" then
   vim.cmd[[colorscheme system76]]
