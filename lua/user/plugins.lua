@@ -58,7 +58,7 @@ return packer.startup(function(use)
   use 'goolord/alpha-nvim'
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-
+  use "ellisonleao/glow.nvim"
   -- Color Schemes
   use "marko-cerovac/material.nvim"
   use "LunarVim/Colorschemes"
@@ -94,6 +94,8 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- Better Rust Tools
+  use "simrat39/rust-tools.nvim"
 
 
 
