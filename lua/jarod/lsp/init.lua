@@ -4,5 +4,5 @@ if not status_ok then
 end
 
 
-require("lsp.lsp-installer")
-require("lsp.handlers").setup()
+require("jarod.lsp.lsp-installer")
+require("jarod.lsp.handlers").setup()

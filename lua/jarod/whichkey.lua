@@ -37,7 +37,7 @@ local setup = {
   icons = {
     breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
     separator = "➜", -- symbol used between a key and it's label
-    group = ""-- "+", -- symbol prepended to a group
+    group = "+", -- symbol prepended to a group
   },
   popup_mappings = {
     scroll_down = "<c-d>", -- binding to scroll down inside the popup
@@ -46,7 +46,7 @@ local setup = {
   window = {
     border = "rounded", -- none, single, double, shadow
     position = "top", -- bottom, top
-    margin = { 1, 200, 1, 2 }, -- extra window margin [top, right, bottom, left]
+    margin = { 1, 100, 1, 2 }, -- extra window margin [top, right, bottom, left]
     padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
     winblend = 0,
   },
@@ -81,17 +81,32 @@ local opts = {
 
 
 local mappings = {
+  b = {
+    name = "Buffers",
+    b = {"<cmd>lua require'telescope.builtin'.buffers{}<CR>", "Buffers"},
+  },
+
+  ["e"] = {"<cmd>NvimTreeToggle<CR>", "File Explorer"},
 
   f = {
     name = "Telescope",
-    f = {"<cmd>Telescope find_files<CR>", "Find Files"}
+    f = {"<cmd>Telescope find_files<CR>", "Find Files"},
+    g = {"<cmd>Telescope live_grep<CR>", "Live Grep"},
+    b = {"<cmd>Telescope buffers<CR>", "Buffers"}, -- MAYBE PUT IN BUFFER LIST
   },
 
   l = {
     name = "LSP",
     d = {"<cmd>lua vim.lsp.buf.definition()<CR>", "Definition"},
+    r = {"<cmd>lua require'telescope.builtin'.lsp_references{}<CR>", "References"},
+    t = {"<cmd>lua require'telescope.builtin'.treesitter{}<CR>", "Treesitter"},
 
   },
+
+  t = {
+    name = "Terminal",
+    t = {"<cmd>ToggleTerm<CR>", "Terminal"},
+  }
 
 }
 
