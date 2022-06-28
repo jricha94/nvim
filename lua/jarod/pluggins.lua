@@ -1,5 +1,4 @@
 local fn = vim.fn
-
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -88,5 +87,14 @@ return packer.startup(function(use)
 
   -- Lualine
   use "nvim-lualine/lualine.nvim"
+
+  -- Colors
+  use "norcalli/nvim-colorizer.lua"
+
+  --Auto Pairs
+  use "windwp/nvim-autopairs"
+
+  -- Gitsigns
+  use "lewis6991/gitsigns.nvim"
 
 end)

@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 80,
+	size = math.floor(vim.o.columns * 0.4),
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	--shade_filetypes = {},

@@ -46,12 +46,12 @@ local setup = {
   window = {
     border = "rounded", -- none, single, double, shadow
     position = "top", -- bottom, top
-    margin = { 1, 100, 1, 2 }, -- extra window margin [top, right, bottom, left]
+    margin = { 1, math.floor(vim.o.columns * 0.8), 1, 2 }, -- extra window margin [top, right, bottom, left]
     padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
     winblend = 0,
   },
   layout = {
-    height = { min = 4, max = 25 }, -- min and max height of the columns
+    height = { min = 9, max = 25 }, -- min and max height of the columns
     width = { min = 1, max = 20 }, -- min and max width of the columns
     spacing = 2, -- spacing between columns
     align = "left", -- align columns left, center or right
@@ -92,7 +92,6 @@ local mappings = {
     name = "Telescope",
     f = {"<cmd>Telescope find_files<CR>", "Find Files"},
     g = {"<cmd>Telescope live_grep<CR>", "Live Grep"},
-    b = {"<cmd>Telescope buffers<CR>", "Buffers"}, -- MAYBE PUT IN BUFFER LIST
   },
 
   l = {
@@ -106,8 +105,7 @@ local mappings = {
   t = {
     name = "Terminal",
     t = {"<cmd>ToggleTerm<CR>", "Terminal"},
-  }
-
+  },
 }
 
 

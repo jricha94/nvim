@@ -10,3 +10,6 @@ require "jarod.nvimtree"
 require "jarod.toggleterm"
 require "jarod.lualine"
 require "jarod.lsp"
+require "colorizer".setup()
+require "jarod.autopairs"
+require "jarod.gitsigns"
