@@ -13,3 +13,5 @@ require "jarod.lsp"
 require "colorizer".setup()
 require "jarod.autopairs"
 require "jarod.gitsigns"
+require "jarod.autocommands"
+

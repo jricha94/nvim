@@ -52,7 +52,7 @@ local setup = {
   },
   layout = {
     height = { min = 9, max = 25 }, -- min and max height of the columns
-    width = { min = 1, max = 20 }, -- min and max width of the columns
+    width = { min = 1, max = 40 }, -- min and max width of the columns
     spacing = 2, -- spacing between columns
     align = "left", -- align columns left, center or right
   },
@@ -83,7 +83,11 @@ local opts = {
 local mappings = {
   b = {
     name = "Buffers",
-    b = {"<cmd>lua require'telescope.builtin'.buffers{}<CR>", "Buffers"},
+    b = {"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>", "Buffers"},
+    k = {"<cmd>bdel<CR>", "Close Buffer"},
+    n = {"<cmd>bnext<CR>", "Next Buffer"},
+    p = {"<cmd>bprevious<CR>", "Previous Buffer"},
+    v = {"<cmd>vsplit<CR><cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>", "Vertical Split"},
   },
 
   ["e"] = {"<cmd>NvimTreeToggle<CR>", "File Explorer"},
