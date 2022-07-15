@@ -14,4 +14,7 @@ require "colorizer".setup()
 require "jarod.autopairs"
 require "jarod.gitsigns"
 require "jarod.autocommands"
-
+require "jarod.impatient"
+require "jarod.indentline"
+require "jarod.zettelkasten"
+require "jarod.alpha"

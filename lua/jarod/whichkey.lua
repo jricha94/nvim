@@ -96,6 +96,8 @@ local mappings = {
     name = "Telescope",
     f = {"<cmd>Telescope find_files<CR>", "Find Files"},
     g = {"<cmd>Telescope live_grep<CR>", "Live Grep"},
+    i = {"<cmd>Telescope media_files<CR>", "Images"},
+
   },
 
   l = {
@@ -109,7 +111,22 @@ local mappings = {
   t = {
     name = "Terminal",
     t = {"<cmd>ToggleTerm<CR>", "Terminal"},
+    g = {"<cmd> lua _GLOW_TOGGLE()<CR>", "Glow"},
+    z = {"<cmd> lua _ZETTEL_TOGGLE()<CR>", "Notes"},
   },
+
+  z = {
+    name = "Zettelkasten",
+    n = {"<cmd>Telekasten new_templated_note<CR>", "New Note"},
+    f = {"<cmd>Telekasten find_notes<CR>", "Find Note"},
+    s = {"<cmd>Telekasten search_notes<CR>", "Search in Notes"},
+    i = {"<cmd>Telekasten insert_link<CR>", "Insert Link"},
+    g = {"<cmd>Telekasten follow_link<CR>", "Goto Link"},
+    r = {"<cmd>Telekasten rename_note<CR>", "Rename Note"},
+    b = {"<cmd>Telekasten show_backlinks<CR>", "Show Backlinks"},
+    p = {"<cmd>Telekasten panel<CR>", "Command Palette"},
+
+  }
 }
 
 

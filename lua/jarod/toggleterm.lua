@@ -68,3 +68,17 @@ local python = Terminal:new({ cmd = "python", hidden = true })
 function _PYTHON_TOGGLE()
 	python:toggle()
 end
+
+local glow = Terminal:new({ cmd = "glow", hidden = true, close_on_exit = true, direction = 'float'})
+
+function _GLOW_TOGGLE()
+  glow:toggle()
+end
+
+local zettelkasten = Terminal:new({ cmd = "glow ~/Zettelkasten", hidden = true, close_on_exit = true, direction = 'float'})
+
+function _ZETTEL_TOGGLE()
+  zettelkasten:toggle()
+end
+
+

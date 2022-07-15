@@ -96,5 +96,18 @@ return packer.startup(function(use)
 
   -- Gitsigns
   use "lewis6991/gitsigns.nvim"
+  
+  -- Faster loading
+  use 'lewis6991/impatient.nvim'
+
+  -- tab lines
+  use "lukas-reineke/indent-blankline.nvim"
+
+  -- Zettelkasten Notes
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "renerocksai/telekasten.nvim"
+
+  -- splash page
+  use "goolord/alpha-nvim"
 
 end)
